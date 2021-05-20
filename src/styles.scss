@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BFC3C7;
+}
+
+.frontLayoutContainer {
+    width: 100%;
+    display: flex;
+
+    .leftSideContainer {
+        width: calc(100% - 400px);
+    }
+
+    .rightContainer {
+        width: 400px;
+        height: 100vh;
+        color: white;
+        background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    }
+}
+
+#loginPageContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+
+    display: flex;
+
+    .imageBlockContainer {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        background-image: linear-gradient( 105.3deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );
+    }
+
+    .formContainer {
+        width: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .inputContainer {
+            width: 100%;
+
+            input {
+                color: #BFC3C7;
+                outline: none;
+                width: 100%;
+                padding: 10px;
+                background-color: #F3F5F7;
+                border: 2px solid #d8d8d8;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.headerContainer {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeContainer {
+    width: 100%;
+    padding: 20px;
+}
