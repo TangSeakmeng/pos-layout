@@ -12,6 +12,9 @@ body {
 
 .frontLayoutContainer {
     width: 100%;
+    min-height: 100vh;
+    position: relative;
+
     display: flex;
 
     .leftSideContainer {
@@ -23,6 +26,14 @@ body {
         height: 100vh;
         color: white;
         background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    }
+
+    .floatingButton {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
@@ -78,4 +89,22 @@ body {
 .homeContainer {
     width: 100%;
     padding: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .frontLayoutContainer { 
+    
+        .leftSideContainer {
+            width: 100%;
+        }
+    
+        .rightContainer {
+            display: none;
+        }
+    
+        .floatingButton {
+            display: block;
+        }
+    }
 }
