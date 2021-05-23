@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrontLayoutComponent implements OnInit {
 
+  isDialogShow: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showDialog() {
+    this.isDialogShow = !this.isDialogShow;
   }
 
 }

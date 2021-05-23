@@ -8,5 +8,10 @@
         <router-outlet name='child2'></router-outlet>
     </div>
 
-    <button class="floatingButton">Floating Button</button>
+    <button class="floatingButton" (click)="showDialog()">Floating Button</button>
+    <div class="floatingDialog" *ngIf="isDialogShow">
+        <router-outlet name='child2'>
+            <h1>hello</h1>
+        </router-outlet>
+    </div>
 </div>
